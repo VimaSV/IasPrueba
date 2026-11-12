@@ -31,7 +31,7 @@ El procedimiento definitivo se encuentra en el archivo `cerrar_solicitud.sql`.
 Se definieron las siguientes respuestas:
 
 | Escenario | Comportamiento |
-
+|---|---|
 | Solicitud inexistente | Genera error ORA-20001 |
 | Solicitud ya procesada | Genera error ORA-20002 |
 | Sin gestiones aprobadas | Genera error ORA-20003 |
@@ -44,7 +44,7 @@ Los errores controlados permiten identificar la situacion sin ocultar informacio
 Las pruebas se ejecutaron en Oracle, utilizando datos ficticios del esquema `PRUEBA_IAS`.
 
 | Prueba | Registro | Resultado |
-
+|---|---|---|
 | Cierre exitoso | ID 4 | Estado actualizado y auditoria registrada |
 | Sin gestiones aprobadas | ID 1 | Error ORA-20003 |
 | Cierre repetido | ID 4 | Error ORA-20002 |
