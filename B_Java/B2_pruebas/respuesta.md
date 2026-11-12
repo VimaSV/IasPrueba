@@ -7,7 +7,7 @@ Verificar que el metodo `consultar(Long id)` funcione correctamente cuando exist
 ## 2. Casos de prueba
 
 | Prueba | Datos de entrada | Resultado esperado |
-|---|---|---|
+
 | Solicitud existente con gestiones | Solicitud valida, cliente con nombre y varias gestiones | Devuelve el DTO con los datos correctos y la fecha de la gestion mas reciente |
 | Solicitud inexistente | ID que no existe | Genera `IllegalArgumentException` |
 | Solicitud sin gestiones | Solicitud existente y lista vacia | Genera `IllegalStateException` |
@@ -15,7 +15,7 @@ Verificar que el metodo `consultar(Long id)` funcione correctamente cuando exist
 | Nombre del cliente nulo | Cliente existente sin nombre | Genera `IllegalStateException` |
 | Gestiones sin fecha valida | Lista con gestiones cuyas fechas son nulas | Genera `IllegalStateException` |
 
-## 3. Pseudopruebas
+## 3. casos de prueba verificables
 
 ### Prueba 1. Solicitud existente con gestiones
 
@@ -89,5 +89,3 @@ Se comprueba que el metodo:
 - Identifica solicitudes inexistentes.
 - Controla la ausencia de gestiones y datos del cliente.
 - Selecciona la gestion mas reciente sin depender del orden de la lista.
-
-Las pruebas se presentan como pseudopruebas verificables, ya que no se proporciono un proyecto Java completo ni la configuracion necesaria para ejecutarlas automaticamente.
